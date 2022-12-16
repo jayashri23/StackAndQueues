@@ -3,10 +3,10 @@ package com.stackqueues;
 import static java.lang.System.exit;
 
 public class StackQueues {
-    private class Node { //Linked list node
-        int data; // integer data
-        Node next; // reference variable Node type
-    }
+    private class Node{
+    int data; // integer data
+    Node next; // reference variable Node type
+}
 
     Node top;     // create global top reference variable global
 
@@ -52,7 +52,6 @@ public class StackQueues {
         top = top.next;
 
     }
-
     public void printData()
     {
         if (top == null) {
@@ -86,7 +85,6 @@ public class StackQueues {
         obj.pop();
         obj.pop();
         obj.printData();
-
 
     }
 }
