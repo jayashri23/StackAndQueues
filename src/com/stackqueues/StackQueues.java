@@ -3,10 +3,10 @@ package com.stackqueues;
 import static java.lang.System.exit;
 
 public class StackQueues {
-    private class Node{
-    int data; // integer data
-    Node next; // reference variable Node type
-}
+    private class Node { //Linked list node
+        int data; // integer data
+        Node next; // reference variable Node type
+    }
 
     Node top;     // create global top reference variable global
 
@@ -76,15 +76,7 @@ public class StackQueues {
         obj.push(70);
         obj.push(30);
         obj.push(56);
-        System.out.println("\nAdding Element in Stack: ");
+        System.out.println("\nAdding Element in Queue: ");
         obj.printData();
-        System.out.printf("\n\nTop of Element is: %d\n",obj.peek());
-        obj.printData();
-        System.out.println("\n\nRemoving Element in Stack: ");
-        obj.pop();
-        obj.pop();
-        obj.pop();
-        obj.printData();
-
     }
 }
